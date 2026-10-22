@@ -1,0 +1,38 @@
+{
+  "_comment": "All dimensions in mm. Values marked ESTIMATE were read off photos - measure your part with calipers and replace them.",
+  "disc": false,               "_disc": "false = open bellmouth ring, one part, best airflow. true = disc valve look (disc + fins), uses the disc_*/post_*/fin_* values below",
+
+  "flange_od": 154.0,          "_flange_od": "ESTIMATE - outer diameter of the visible ring",
+  "flange_t": 6.0,             "_flange_t": "thickness of the flange plate (was 3; 6 gives room for a 6 mm inlet lip)",
+  "flange_lip_depth": 9.0,     "_flange_lip_depth": "outer seal lip, measured from front face toward the wall (3 mm beyond the plate)",
+  "flange_lip_t": 1.6,
+  "flange_chamfer": 1.0,       "_flange_chamfer": "front outer edge, 45 deg (also kills elephant foot)",
+  "inlet_lip_r": 6.0,          "_inlet_lip_r": "AIRFLOW - rounded inlet on the bore edge (45 deg chamfer + arc). Max = flange_t; 0 = sharp edge",
+
+  "collar_od": 115.0,          "_collar_od": "MEASURED 115 mm - ring that fits into the ceiling part",
+  "collar_wall": 2.0,
+  "collar_h": 33.0,            "_collar_h": "ESTIMATE - depth from flange front face to collar end (27 mm beyond the 6 mm plate, as the 30/3 original)",
+  "collar_lead_in": 1.0,
+
+  "disc_d": 78.0,              "_disc_d": "ESTIMATE - visible disc diameter",
+  "disc_t": 2.6,
+  "disc_chamfer": 0.8,         "_disc_chamfer": "front edge chamfer, only used when disc_edge_r = 0",
+  "disc_edge_r": 2.6,          "_disc_edge_r": "AIRFLOW - rounded front edge of the disc. Max = disc_t; 0 = chamfer",
+  "disc_rim_h": 3.0,           "_disc_rim_h": "stiffening rim on disc back (original has one)",
+  "disc_rim_w": 1.6,
+  "standoff": 10.0,            "_standoff": "air gap between disc back and flange front plane. Throat is the annulus disc/bore; standoff only throttles air from straight ahead (see airflow.py)",
+
+  "post_r": 27.0,              "_post_r": "radius of the 3 posts/fins from centre",
+  "post_d": 6.0,
+  "pin_d": 3.0,
+  "pin_len": 7.0,
+  "fit_clearance": 0.25,       "_fit_clearance": "radial clearance pin/hole - raise to 0.3 if too tight",
+
+  "fin_t": 2.4,
+  "fin_h_wall": 14.0,
+  "boss_d": 9.0,
+  "boss_h": 10.0,
+  "spokes": 3,
+
+  "segments": 160
+}

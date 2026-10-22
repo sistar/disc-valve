@@ -1,0 +1,5 @@
+.DS_Store
+out/
+*.blend1
+*.gcode
+__pycache__/
